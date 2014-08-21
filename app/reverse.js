@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function(word) {
+module.exports = function backwards(word) {
   return word.split('').reverse().join('');
 };

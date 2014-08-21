@@ -21,4 +21,8 @@ browserify -t debowerify app.js > bundle.js
 
 grunt
 
-For commit 1 open console to view results
+### Usage
+-----------------------------
+- Open console to view results
+
+- palindrome checker, reverse word and hello browserify modules.

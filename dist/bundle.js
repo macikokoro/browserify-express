@@ -7,7 +7,16 @@ $.each($('li'), function(index, li)  {
   console.log(pal(li.innerText));
 });
 
-},{"./bower_components/jquery/dist/jquery.js":2,"./palindrome":3}],2:[function(require,module,exports){
+var greetings = require('./sayhi');
+greetings();
+
+var backwards = require('./reverse');
+
+$.each($('h1'), function(index, h1) {
+  console.log(backwards(h1.innerText));
+});
+
+},{"./bower_components/jquery/dist/jquery.js":2,"./palindrome":3,"./reverse":4,"./sayhi":5}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.1
  * http://jquery.com/
@@ -9209,8 +9218,17 @@ module.exports = function(word) {
 },{"./reverse":4}],4:[function(require,module,exports){
 'use strict';
 
-module.exports = function(word) {
+module.exports = function backwards(word) {
   return word.split('').reverse().join('');
 };
+
+},{}],5:[function(require,module,exports){
+'use strict';
+
+var greeting = function() {
+	console.log("Yo Browserify!");
+}
+
+module.exports = greeting;
 
 },{}]},{},[1]);
